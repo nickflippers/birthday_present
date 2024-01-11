@@ -1,0 +1,35 @@
+html {
+  background-color: #ffd1dc;
+}
+
+body {
+  background: url('data:image/svg+xml;utf8,<svg style="transform:rotate(-40deg)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 60"><text x="0" y="35" fill="rgb(252, 142, 172)" style="font-weight: 600">im gay</text></svg>')
+    0 0/80px 70px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #e75480;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 8px;
+}
+
+.akiva {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  filter: sepia(0.075) contrast(0.75) brightness(1.25) saturate(0.4);
+}
