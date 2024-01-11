@@ -34,11 +34,11 @@ body {
 
 .akiva {
   width: 100%;
+  height: auto;
   max-width: 200px;
   max-height: 200px;
   aspect-ratio: 1;
   border-radius: 5px;
-  /* filter: sepia(0.075) contrast(0.75) brightness(1.25) saturate(0.4); */
 
   border: 8px solid #e75480;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
