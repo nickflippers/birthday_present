@@ -9,27 +9,46 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 8px;
   border-radius: 8px;
-  background-color: #e75480;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 8px;
+  gap: 20px;
+}
+
+.container {
+  animation: scroll 30s linear infinite;
+}
+
+.reverse {
+  animation: scroll 30s linear reverse infinite;
 }
 
 .akiva {
   width: 100%;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 200px;
+  max-height: 200px;
   aspect-ratio: 1;
   border-radius: 5px;
-  filter: sepia(0.075) contrast(0.75) brightness(1.25) saturate(0.4);
+  /* filter: sepia(0.075) contrast(0.75) brightness(1.25) saturate(0.4); */
+
+  border: 8px solid #e75480;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-472px));
+  }
 }
